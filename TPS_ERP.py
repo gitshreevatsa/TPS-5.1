@@ -26,11 +26,13 @@ for i in range(2019, 2022):
     stud_dict[Year]['SFR'] = SFR 
 
 print(dict)
-print(stud_dict)
+
 Average_SFR = dict[2019]+ dict[2020]+ dict[2021]
 Average_SFR = Average_SFR/3
 Average_SFR = "{:.2f}".format(Average_SFR)
 print("Average SFR = " + str(Average_SFR))
+stud_dict['Average SFR'] = Average_SFR
+print(stud_dict)
 
 if(float(Average_SFR) <= 15):
     Score = 20
@@ -51,5 +53,5 @@ elif(float(Average_SFR) <= 25):
     Score = 10
     print("Score= " + str(Score) + " Marks")
 else:
-    Score = 00
+    Score = 0
     print("Score= " + str(Score) + " Marks")
