@@ -51,5 +51,5 @@ elif(float(Average_SFR) <= 25):
     Score = 10
     print("Score= " + str(Score) + " Marks")
 else:
-    Score = 0
+    Score = 00
     print("Score= " + str(Score) + " Marks")
